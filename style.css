@@ -93,7 +93,7 @@ main .main .img img {
   position: relative;
 }
 
-.img_background_color{
+/* .img_background_color{
   background-color: #f15d2257;
   width: 593.92px;
   height: 593.92px;
@@ -103,7 +103,7 @@ main .main .img img {
   z-index: -1;
   left: 307px;
  top: 144%;
-}
+} */
 
 .my_failures{
   /* margin:0 auto; */
