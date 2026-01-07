@@ -1,0 +1,144 @@
+::root {
+  --font-family: "Work Sans",
+    sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+/* header {
+  background-image: url('images/banner/banner1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  height: 100vh;
+  padding: 237px 110px 162px 900px;
+} */
+
+header {
+  background-image: url('images/banner/banner1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  padding: 248px 290px 182px 907px;
+  height: 100vh;
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: center;
+  padding-right: 110px;
+}
+
+.first_section {
+  /* padding: 20px; */
+  width: 525px;
+  text-align: right;
+  /* border: 1px solid red; */
+}
+
+.header {
+  max-width: 525px;
+}
+
+.header h1 {
+  font-size: 75px;
+  color: #151414;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.text {
+  max-width: 475px;
+  margin-left: auto;
+}
+
+.text p {
+  font-size: 20px;
+  line-height: 26px;
+  color: #444343;
+  /* text-align: right; */
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.btn {
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  background-color: #F15B22;
+  padding: 20px 25px;
+}
+
+main {
+  margin: 148px 363px 0 232px;
+  width: 1206px;
+  height: 814px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 1206px;
+}
+
+main .main .img img {
+  width: 641px;
+  position: relative;
+}
+
+.img_background_color{
+  background-color: #f15d2257;
+  width: 593.92px;
+  height: 593.92px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  left: 307px;
+ top: 144%;
+}
+
+.my_failures{
+  /* margin:0 auto; */
+  width: 470px;
+    height: 450px;
+}
+
+.failures {
+  padding: 269px 0 95px 98px;
+  
+}
+
+.failures_header h1 {
+  font-size: 40px;
+  font-weight: 900;
+  columns: #151414;
+  margin-bottom: 24px;
+}
+
+.failures_paragraph p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #444343;
+  margin-bottom: 18px;
+}
+
+.failures_list ul {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.failures_list ul li {
+  margin-top: 12px;
+}
+
+.failures_list ul li i{
+  color: #16D887;
+}
