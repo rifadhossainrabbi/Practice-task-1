@@ -90,30 +90,42 @@ main {
 
 main .main .img img {
   width: 641px;
-  position: relative;
+  /* height: 641px; */
 }
 
-/* .img_background_color{
+.img {
+  position: relative;
+  display: inline-block;
+}
+
+.img::after {
+  content: "";
   background-color: #f15d2257;
   width: 593.92px;
   height: 593.92px;
+  /* width: 100%;
+  height: 100%; */
+  /* top: 0; */
+  left: 4%;
+  /* right: 50%; */
+  bottom: 0;
   border: none;
   border-radius: 50%;
   position: absolute;
-  z-index: -1;
-  left: 307px;
- top: 144%;
-} */
+  z-index: -10;
+  /* left: 307px;
+ top: 144%; */
+}
 
-.my_failures{
+.my_failures {
   /* margin:0 auto; */
   width: 470px;
-    height: 450px;
+  height: 450px;
 }
 
 .failures {
   padding: 269px 0 95px 98px;
-  
+
 }
 
 .failures_header h1 {
@@ -139,6 +151,6 @@ main .main .img img {
   margin-top: 12px;
 }
 
-.failures_list ul li i{
+.failures_list ul li i {
   color: #16D887;
 }
