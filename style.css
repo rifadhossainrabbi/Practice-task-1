@@ -235,18 +235,18 @@ footer {
 .footer_section {
   display: flex;
   justify-content: space-between;
-  gap: 371px;
+  /* gap: 371px; */
   max-width: 1285px;
 }
 
 
 /* Footers Future Section */
 .future {
-  max-width: 545px;
+  max-width: 540px;
 }
 
 .subscribe {
-  max-width: 738px;
+  max-width: 745px;
 }
 
 .future h1 {
