@@ -1,4 +1,4 @@
-::root {
+:root {
   --font-family: "Work Sans",
     sans-serif;
 }
@@ -13,15 +13,7 @@ body {
   font-family: var(--font-family);
 }
 
-/* header {
-  background-image: url('images/banner/banner1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 100vw;
-  height: 100vh;
-  padding: 237px 110px 162px 900px;
-} */
-
+/* Header Style */
 header {
   background-image: url('images/banner/banner1.png');
   background-size: cover;
@@ -35,19 +27,21 @@ header {
   padding-right: 110px;
 }
 
-.first_section {
+/* Header style */
+
+header .first_section {
   /* padding: 20px; */
   width: 525px;
   text-align: right;
   /* border: 1px solid red; */
 }
 
-.header {
+header .first_section .header {
   max-width: 525px;
 }
 
 .header h1 {
-  font-size: 75px;
+  font-size: 65px;
   color: #151414;
   font-weight: bold;
   margin-bottom: 30px;
@@ -59,8 +53,9 @@ header {
 }
 
 .text p {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 26px;
+  font-weight: 500;
   color: #444343;
   /* text-align: right; */
   margin-left: auto;
@@ -75,17 +70,22 @@ header {
   padding: 20px 25px;
 }
 
+/* Main section style */
 main {
-  margin: 148px 363px 0 232px;
+  max-width: 100vw;
+  /* margin: 148px 363px 0 232px;
   width: 1206px;
-  height: 814px;
+  height: 814px; */
 }
 
 .main {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   /* border: 1px solid red; */
   width: 1206px;
+  margin: 148px 363px 0 232px;
+  /* width: 1206px; */
+  height: 814px;
 }
 
 main .main .img img {
@@ -95,7 +95,7 @@ main .main .img img {
 
 .img {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .img::after {
@@ -108,15 +108,15 @@ main .main .img img {
   /* top: 0; */
   left: 4%;
   /* right: 50%; */
-  bottom: 0;
+  bottom: 1px;
   border: none;
   border-radius: 50%;
   position: absolute;
   z-index: -10;
-  /* left: 307px;
- top: 144%; */
 }
 
+
+/* Failures Section */
 .my_failures {
   /* margin:0 auto; */
   width: 470px;
@@ -125,21 +125,21 @@ main .main .img img {
 
 .failures {
   padding: 269px 0 95px 98px;
-
 }
 
 .failures_header h1 {
   font-size: 40px;
-  font-weight: 900;
+  font-weight: bolder;
   columns: #151414;
   margin-bottom: 24px;
 }
 
 .failures_paragraph p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
+  font-weight: 500;
   color: #444343;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 
 .failures_list ul {
@@ -149,8 +149,156 @@ main .main .img img {
 
 .failures_list ul li {
   margin-top: 12px;
+  font-size: 16px;
+  color: #444343;
+  font-weight: 500;
 }
 
 .failures_list ul li i {
   color: #16D887;
+}
+
+/* My plans Section */
+.my_plans {
+  max-width: 1285px;
+  /* border: 1px solid red; */
+  margin: 147px 258px 0 255px;
+}
+
+.my_plans .header {
+  /* text-align: center; */
+  margin: 0 auto;
+}
+
+.my_plans .header h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #151414;
+  text-align: center;
+  margin-bottom: 63px;
+}
+
+.plans_cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.plans_cards img {
+  width: 105px;
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+.plans_cards h3 {
+  margin-bottom: 18px;
+  font-size: 34px;
+  font-weight: bold;
+  color: #151414;
+}
+
+.plans_cards p {
+  font-size: 28px;
+  font-weight: 500;
+  color: #737272;
+  text-align: center;
+}
+
+
+/* Grediant pic style */
+.Grediant_pic {
+  padding: 67px 695px 67px 72px;
+  max-width: 1285px;
+  /* border: 1px solid red; */
+  margin: 147px 258px 213px 255px;
+  background-image: linear-gradient(to right, rgb(236, 88, 29), rgba(241, 91, 34, 0.06)), url('images/watch.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Grediant_pic h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 27px;
+}
+
+/* Footer Section */
+footer {
+  background-color: black;
+  max-width: 100vw;
+  padding: 147px 258px 147px 255px;
+  color: #F8F8F8;
+}
+
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+  gap: 371px;
+  max-width: 1285px;
+}
+
+
+/* Footers Future Section */
+.future {
+  max-width: 545px;
+}
+
+.subscribe {
+  max-width: 738px;
+}
+
+.future h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #F8F8F8;
+  margin-bottom: 27px;
+}
+
+.future p {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.contact_link {
+  margin-top: 18px;
+}
+
+.contact_link .one {
+  margin: 24px 0 18px 0;
+}
+
+.contact_link p {
+  margin-bottom: 36px;
+}
+
+.social_link {
+  display: flex;
+  gap: 21px;
+}
+
+.subscribe h4 {
+  font-size: 29px;
+  margin-bottom: 34px;
+}
+
+.subscribe form input {
+  padding: 21px 158px 21px 22px;
+  border: 1px solid #ffffffa2;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #F3F3F3;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.btn1 button {
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  color: #F15B22;
+  font-size: 22px;
+  font-weight: 600;
 }
